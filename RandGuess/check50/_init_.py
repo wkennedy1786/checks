@@ -14,5 +14,5 @@ class RandGuess(Checks):
         
     @check("compiles")
     def test_name(self):
-        """input of Dr Bill yields output of 4"""
-        self.spawn("./randguess").stdin("Hi, Dr Bill! Guess a number between 1 and 100.\n").stdout("4\n", "4\n").exit(0)
+        """input of Dr Bill yields output of Hi, Dr Bill!"""
+        self.spawn("./randguess").stdin("Dr Bill").stdout("Hi, Dr Bill!\n").exit(0)
